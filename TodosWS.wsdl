@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ColaboradoresService" targetNamespace="urn:totvs:ws1:logicalis" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:prodata="urn:schemas-progress-com:xml-prodata:0001" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:totvs:ws1:logicalis" xmlns:S2="urn:totvs:ws1:logicalis:ColaboradoresService" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:S1="urn:soap-fault:details" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>EncodingType=RPC_LITERAL, WSA_Product=11.5 - Fri Nov 28 18:10:07 EST 2014</wsdl:documentation>
+  <wsdl:types>
+<schema elementFormDefault="unqualified" targetNamespace="urn:soap-fault:details" xmlns="http://www.w3.org/2001/XMLSchema"><complexType name="FaultDetail"><sequence><element name="errorMessage" type="xsd:string"/><element name="requestID" type="xsd:string"/></sequence></complexType></schema>
+<schema elementFormDefault="unqualified" targetNamespace="urn:totvs:ws1:logicalis:ColaboradoresService" xmlns="http://www.w3.org/2001/XMLSchema"><complexType name="apontamentoProfissional_ttBatidasFuncRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="dat_batida" nillable="true" type="xsd:date"/><element name="id_batida" nillable="true" type="xsd:string"/><element name="hra_batida" nillable="true" type="xsd:string"/><element name="cod_observ" nillable="true" type="xsd:string"/><element name="des_observ" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="apontamentoProfissional_ttBatidasFuncParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttBatidasFuncRow" type="S2:apontamentoProfissional_ttBatidasFuncRow"/></sequence></complexType><complexType name="batidasTratadas_ttBatidasFuncRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="dat_batida" nillable="true" type="xsd:date"/><element name="hra_batida" nillable="true" type="xsd:string"/><element name="hra_ausen_remun" nillable="true" type="xsd:string"/><element name="cod_observ" nillable="true" type="xsd:string"/><element name="des_observ" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="batidasTratadas_ttBatidasFuncParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttBatidasFuncRow" type="S2:batidasTratadas_ttBatidasFuncRow"/></sequence></complexType><complexType name="buscaColaboradorPorId_ttColaboradorRow"><sequence><element name="cdn_empresa" nillable="true" type="xsd:string"/><element name="cdn_estab" nillable="true" type="xsd:string"/><element name="cdn_funcionario" nillable="true" type="xsd:string"/><element name="nom_completo" nillable="true" type="xsd:string"/><element name="nom_conhecido" nillable="true" type="xsd:string"/><element name="nom_rua" nillable="true" type="xsd:string"/><element name="nom_bairro" nillable="true" type="xsd:string"/><element name="nom_complemento" nillable="true" type="xsd:string"/><element name="nom_cep" nillable="true" type="xsd:string"/><element name="nom_cidade_end" nillable="true" type="xsd:string"/><element name="cod_uf_end" nillable="true" type="xsd:string"/><element name="nom_rg" nillable="true" type="xsd:string"/><element name="cod_per_cpf" nillable="true" type="xsd:string"/><element name="cod_per_pis" nillable="true" type="xsd:string"/><element name="log_relogio_ponto" nillable="true" type="xsd:boolean"/><element name="nom_pais_empresa" nillable="true" type="xsd:string"/><element name="nom_cidad_empresa" nillable="true" type="xsd:string"/><element name="nom_uf_empresa" nillable="true" type="xsd:string"/><element name="nom_rua_estab" nillable="true" type="xsd:string"/><element name="nom_bairro_estab" nillable="true" type="xsd:string"/><element name="nom_compl_estab" nillable="true" type="xsd:string"/><element name="nom_cep_estab" nillable="true" type="xsd:string"/><element name="nom_cidade_estab" nillable="true" type="xsd:string"/><element name="nom_uf_estab" nillable="true" type="xsd:string"/><element name="nom_pais_estab" nillable="true" type="xsd:string"/><element name="nom_np" nillable="true" type="xsd:string"/><element name="nom_cargo_totvs" nillable="true" type="xsd:string"/><element name="cdn_cargo_totvs" nillable="true" type="xsd:int"/><element name="log_ativo" nillable="true" type="xsd:boolean"/><element name="num_ramal" nillable="true" type="xsd:int"/><element name="nom_email_chefe" nillable="true" type="xsd:string"/><element name="nom_chefe" nillable="true" type="xsd:string"/><element name="nom_local" nillable="true" type="xsd:string"/><element name="cod_predio" nillable="true" type="xsd:string"/><element name="cod_andar" nillable="true" type="xsd:string"/><element name="nom_empresa" nillable="true" type="xsd:string"/><element name="cdn_funcao" nillable="true" type="xsd:int"/><element name="nom_funcao" nillable="true" type="xsd:string"/><element name="cod_lotacao" nillable="true" type="xsd:string"/><element name="nom_lotacao" nillable="true" type="xsd:string"/><element name="cod_registro" nillable="true" type="xsd:string"/><element name="nom_vinculo" nillable="true" type="xsd:string"/><element name="cdn_disciplina" nillable="true" type="xsd:int"/><element name="nom_disciplina" nillable="true" type="xsd:string"/><element name="nom_email" nillable="true" type="xsd:string"/><element name="cdn_func_superior" nillable="true" type="xsd:string"/><element name="dat_admis_func" nillable="true" type="xsd:string"/><element name="dat_deslig_func" nillable="true" type="xsd:string"/><element name="dat_nascimento" nillable="true" type="xsd:string"/><element name="cod_banco" nillable="true" type="xsd:string"/><element name="cod_bco_agencia" nillable="true" type="xsd:string"/><element name="cod_bco_conta" nillable="true" type="xsd:string"/><element name="nom_unidade" nillable="true" type="xsd:string"/><element name="cod_cnpj_empresa" nillable="true" type="xsd:string"/><element name="cdn_jornada" nillable="true" type="xsd:int"/><element name="des_jornada" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="buscaColaboradorPorId_ttColaboradorParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttColaboradorRow" type="S2:buscaColaboradorPorId_ttColaboradorRow"/></sequence></complexType><complexType name="buscaTodosColaboradores_ttColaboradorRow"><sequence><element name="cdn_empresa" nillable="true" type="xsd:string"/><element name="cdn_estab" nillable="true" type="xsd:string"/><element name="cdn_funcionario" nillable="true" type="xsd:string"/><element name="nom_completo" nillable="true" type="xsd:string"/><element name="nom_conhecido" nillable="true" type="xsd:string"/><element name="nom_rua" nillable="true" type="xsd:string"/><element name="nom_bairro" nillable="true" type="xsd:string"/><element name="nom_complemento" nillable="true" type="xsd:string"/><element name="nom_cep" nillable="true" type="xsd:string"/><element name="nom_cidade_end" nillable="true" type="xsd:string"/><element name="cod_uf_end" nillable="true" type="xsd:string"/><element name="nom_rg" nillable="true" type="xsd:string"/><element name="cod_per_cpf" nillable="true" type="xsd:string"/><element name="cod_per_pis" nillable="true" type="xsd:string"/><element name="log_relogio_ponto" nillable="true" type="xsd:boolean"/><element name="nom_pais_empresa" nillable="true" type="xsd:string"/><element name="nom_cidad_empresa" nillable="true" type="xsd:string"/><element name="nom_uf_empresa" nillable="true" type="xsd:string"/><element name="nom_rua_estab" nillable="true" type="xsd:string"/><element name="nom_bairro_estab" nillable="true" type="xsd:string"/><element name="nom_compl_estab" nillable="true" type="xsd:string"/><element name="nom_cep_estab" nillable="true" type="xsd:string"/><element name="nom_cidade_estab" nillable="true" type="xsd:string"/><element name="nom_uf_estab" nillable="true" type="xsd:string"/><element name="nom_pais_estab" nillable="true" type="xsd:string"/><element name="nom_np" nillable="true" type="xsd:string"/><element name="nom_cargo_totvs" nillable="true" type="xsd:string"/><element name="cdn_cargo_totvs" nillable="true" type="xsd:int"/><element name="log_ativo" nillable="true" type="xsd:boolean"/><element name="num_ramal" nillable="true" type="xsd:int"/><element name="nom_email_chefe" nillable="true" type="xsd:string"/><element name="nom_chefe" nillable="true" type="xsd:string"/><element name="nom_local" nillable="true" type="xsd:string"/><element name="cod_predio" nillable="true" type="xsd:string"/><element name="cod_andar" nillable="true" type="xsd:string"/><element name="nom_empresa" nillable="true" type="xsd:string"/><element name="cdn_funcao" nillable="true" type="xsd:int"/><element name="nom_funcao" nillable="true" type="xsd:string"/><element name="cod_lotacao" nillable="true" type="xsd:string"/><element name="nom_lotacao" nillable="true" type="xsd:string"/><element name="cod_registro" nillable="true" type="xsd:string"/><element name="nom_vinculo" nillable="true" type="xsd:string"/><element name="cdn_disciplina" nillable="true" type="xsd:int"/><element name="nom_disciplina" nillable="true" type="xsd:string"/><element name="nom_email" nillable="true" type="xsd:string"/><element name="cdn_func_superior" nillable="true" type="xsd:string"/><element name="dat_admis_func" nillable="true" type="xsd:string"/><element name="dat_deslig_func" nillable="true" type="xsd:string"/><element name="dat_nascimento" nillable="true" type="xsd:string"/><element name="cod_banco" nillable="true" type="xsd:string"/><element name="cod_bco_agencia" nillable="true" type="xsd:string"/><element name="cod_bco_conta" nillable="true" type="xsd:string"/><element name="nom_unidade" nillable="true" type="xsd:string"/><element name="cod_cnpj_empresa" nillable="true" type="xsd:string"/><element name="cdn_jornada" nillable="true" type="xsd:int"/><element name="des_jornada" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="buscaTodosColaboradores_ttColaboradorParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttColaboradorRow" type="S2:buscaTodosColaboradores_ttColaboradorRow"/></sequence></complexType><complexType name="contabFolhaProfissionais_ttContabFolhaRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="cdn_evento" nillable="true" type="xsd:string"/><element name="nom_evento" nillable="true" type="xsd:string"/><element name="val_evento" nillable="true" type="xsd:decimal"/><element name="cod_cta_contabil" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="contabFolhaProfissionais_ttContabFolhaParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttContabFolhaRow" type="S2:contabFolhaProfissionais_ttContabFolhaRow"/></sequence></complexType><complexType name="custoProfissional_ttCustoColabRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="val_custo_hora" nillable="true" type="xsd:decimal"/></sequence></complexType><complexType name="custoProfissional_ttCustoColabParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttCustoColabRow" type="S2:custoProfissional_ttCustoColabRow"/></sequence></complexType><complexType name="listaEscalas_ttEscalasRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="num_dia" nillable="true" type="xsd:int"/><element name="cod_tipo_dia" nillable="true" type="xsd:string"/><element name="hra_ini_jornada" nillable="true" type="xsd:string"/><element name="hra_fim_jornada" nillable="true" type="xsd:string"/></sequence></complexType><complexType name="listaEscalas_ttEscalasParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttEscalasRow" type="S2:listaEscalas_ttEscalasRow"/></sequence></complexType><complexType name="pagtoFolhaProfissionais_ttPagtoFolhaRow"><sequence><element name="cdn_funcionario" nillable="true" type="xsd:int"/><element name="nom_funcionario" nillable="true" type="xsd:string"/><element name="cod_cnpj" nillable="true" type="xsd:string"/><element name="cod_filial" nillable="true" type="xsd:string"/><element name="dat_pagto" nillable="true" type="xsd:date"/><element name="cdn_banco" nillable="true" type="xsd:string"/><element name="cod_agencia" nillable="true" type="xsd:string"/><element name="num_cta_corren" nillable="true" type="xsd:string"/><element name="val_pagto" nillable="true" type="xsd:decimal"/></sequence></complexType><complexType name="pagtoFolhaProfissionais_ttPagtoFolhaParam"><sequence><element maxOccurs="unbounded" minOccurs="0" name="ttPagtoFolhaRow" type="S2:pagtoFolhaProfissionais_ttPagtoFolhaRow"/></sequence></complexType></schema>
+  </wsdl:types>
+  <wsdl:message name="ColaboradoresService_contabFolhaProfissionaisResponse">
+    <wsdl:part name="ttContabFolha" type="S2:contabFolhaProfissionais_ttContabFolhaParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_contabFolhaProfissionais">
+    <wsdl:part name="num_mes_ref" type="xsd:int"/>
+    <wsdl:part name="num_ano_ref" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_listaEscalas">
+    <wsdl:part name="num_mes_refer" type="xsd:int"/>
+    <wsdl:part name="num_ano_refer" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_apontamentoProfissional">
+    <wsdl:part name="dat_refer" type="xsd:date"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_apontamentoProfissionalResponse">
+    <wsdl:part name="ttBatidasFunc" type="S2:apontamentoProfissional_ttBatidasFuncParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_buscaColaboradorPorIdResponse">
+    <wsdl:part name="ttColaborador" type="S2:buscaColaboradorPorId_ttColaboradorParam"/>
+  </wsdl:message>
+  <wsdl:message name="FaultDetailMessage">
+    <wsdl:part name="FaultDetail" type="S1:FaultDetail"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_buscaTodosColaboradores">
+    <wsdl:part name="dat_refer" type="xsd:date"/>
+    <wsdl:part name="log_ativos" type="xsd:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_buscaTodosColaboradoresResponse">
+    <wsdl:part name="ttColaborador" type="S2:buscaTodosColaboradores_ttColaboradorParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_pagtoFolhaProfissionais">
+    <wsdl:part name="num_mes_ref" type="xsd:int"/>
+    <wsdl:part name="num_ano_ref" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_custoProfissionalResponse">
+    <wsdl:part name="ttCustoColab" type="S2:custoProfissional_ttCustoColabParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_custoProfissional">
+    <wsdl:part name="dat_refer" type="xsd:date"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_pagtoFolhaProfissionaisResponse">
+    <wsdl:part name="ttPagtoFolha" type="S2:pagtoFolhaProfissionais_ttPagtoFolhaParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_composicaoSaldoHoras">
+    <wsdl:part name="cdn_funcionario" type="xsd:int"/>
+    <wsdl:part name="num_mes_refer" type="xsd:int"/>
+    <wsdl:part name="num_ano_refer" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_composicaoSaldoHorasResponse">
+    <wsdl:part name="hra_trabalhavel" type="xsd:string"/>
+    <wsdl:part name="hra_trabalhada" type="xsd:string"/>
+    <wsdl:part name="hra_afastamento" type="xsd:string"/>
+    <wsdl:part name="hra_falta" type="xsd:string"/>
+    <wsdl:part name="hra_ausencia" type="xsd:string"/>
+    <wsdl:part name="hra_ausencia_remun" type="xsd:string"/>
+    <wsdl:part name="hra_dom_fer" type="xsd:string"/>
+    <wsdl:part name="hra_adc_noturn" type="xsd:string"/>
+    <wsdl:part name="hra_adc_noturn_reduz" type="xsd:string"/>
+    <wsdl:part name="hra_ferias" type="xsd:string"/>
+    <wsdl:part name="hra_saldo_ant" type="xsd:string"/>
+    <wsdl:part name="hra_saldo_mes" type="xsd:string"/>
+    <wsdl:part name="hra_saldo_extra" type="xsd:string"/>
+    <wsdl:part name="des_indicador" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_buscaColaboradorPorId">
+    <wsdl:part name="cdn_funcionario" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_listaEscalasResponse">
+    <wsdl:part name="ttEscalas" type="S2:listaEscalas_ttEscalasParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_batidasTratadas">
+    <wsdl:part name="ttBatidasFunc" type="S2:batidasTratadas_ttBatidasFuncParam"/>
+  </wsdl:message>
+  <wsdl:message name="ColaboradoresService_batidasTratadasResponse">
+  </wsdl:message>
+  <wsdl:portType name="ColaboradoresServiceObj">
+    <wsdl:operation name="apontamentoProfissional" parameterOrder="dat_refer ttBatidasFunc">
+      <wsdl:input message="tns:ColaboradoresService_apontamentoProfissional"/>
+      <wsdl:output message="tns:ColaboradoresService_apontamentoProfissionalResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="batidasTratadas" parameterOrder="ttBatidasFunc">
+      <wsdl:input message="tns:ColaboradoresService_batidasTratadas"/>
+      <wsdl:output message="tns:ColaboradoresService_batidasTratadasResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="buscaColaboradorPorId" parameterOrder="cdn_funcionario ttColaborador">
+      <wsdl:input message="tns:ColaboradoresService_buscaColaboradorPorId"/>
+      <wsdl:output message="tns:ColaboradoresService_buscaColaboradorPorIdResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTodosColaboradores" parameterOrder="dat_refer log_ativos ttColaborador">
+      <wsdl:input message="tns:ColaboradoresService_buscaTodosColaboradores"/>
+      <wsdl:output message="tns:ColaboradoresService_buscaTodosColaboradoresResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="composicaoSaldoHoras" parameterOrder="cdn_funcionario num_mes_refer num_ano_refer hra_trabalhavel hra_trabalhada hra_afastamento hra_falta hra_ausencia hra_ausencia_remun hra_dom_fer hra_adc_noturn hra_adc_noturn_reduz hra_ferias hra_saldo_ant hra_saldo_mes hra_saldo_extra des_indicador">
+      <wsdl:input message="tns:ColaboradoresService_composicaoSaldoHoras"/>
+      <wsdl:output message="tns:ColaboradoresService_composicaoSaldoHorasResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="contabFolhaProfissionais" parameterOrder="num_mes_ref num_ano_ref ttContabFolha">
+      <wsdl:input message="tns:ColaboradoresService_contabFolhaProfissionais"/>
+      <wsdl:output message="tns:ColaboradoresService_contabFolhaProfissionaisResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="custoProfissional" parameterOrder="dat_refer ttCustoColab">
+      <wsdl:input message="tns:ColaboradoresService_custoProfissional"/>
+      <wsdl:output message="tns:ColaboradoresService_custoProfissionalResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="listaEscalas" parameterOrder="num_mes_refer num_ano_refer ttEscalas">
+      <wsdl:input message="tns:ColaboradoresService_listaEscalas"/>
+      <wsdl:output message="tns:ColaboradoresService_listaEscalasResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="pagtoFolhaProfissionais" parameterOrder="num_mes_ref num_ano_ref ttPagtoFolha">
+      <wsdl:input message="tns:ColaboradoresService_pagtoFolhaProfissionais"/>
+      <wsdl:output message="tns:ColaboradoresService_pagtoFolhaProfissionaisResponse"/>
+      <wsdl:fault name="ColaboradoresServiceFault" message="tns:FaultDetailMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ColaboradoresServiceObj" type="tns:ColaboradoresServiceObj">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="apontamentoProfissional">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="batidasTratadas">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscaColaboradorPorId">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscaTodosColaboradores">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="composicaoSaldoHoras">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="contabFolhaProfissionais">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="custoProfissional">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listaEscalas">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="pagtoFolhaProfissionais">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:totvs:ws1:logicalis:ColaboradoresService"/>
+      </wsdl:output>
+      <wsdl:fault name="ColaboradoresServiceFault">
+        <soap:fault name="ColaboradoresServiceFault" use="literal" namespace="https://br1nidbm002:8080/wsa/wsa1"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ColaboradoresServiceService">
+    <wsdl:port name="ColaboradoresServiceObj" binding="tns:ColaboradoresServiceObj">
+<wsdl:documentation></wsdl:documentation>
+      <soap:address location="https://br1nidbm002:8080/wsa/wsa1"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
