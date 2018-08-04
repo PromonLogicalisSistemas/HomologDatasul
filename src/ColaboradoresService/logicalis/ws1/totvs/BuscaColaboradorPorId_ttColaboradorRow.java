@@ -120,8 +120,6 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
 
     private java.lang.String des_jornada;
 
-    private java.lang.String des_local_entrega;
-
     public BuscaColaboradorPorId_ttColaboradorRow() {
     }
 
@@ -181,8 +179,7 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
            java.lang.String nom_unidade,
            java.lang.String cod_cnpj_empresa,
            java.lang.Integer cdn_jornada,
-           java.lang.String des_jornada,
-           java.lang.String des_local_entrega) {
+           java.lang.String des_jornada) {
            this.cdn_empresa = cdn_empresa;
            this.cdn_estab = cdn_estab;
            this.cdn_funcionario = cdn_funcionario;
@@ -239,7 +236,6 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
            this.cod_cnpj_empresa = cod_cnpj_empresa;
            this.cdn_jornada = cdn_jornada;
            this.des_jornada = des_jornada;
-           this.des_local_entrega = des_local_entrega;
     }
 
 
@@ -1362,26 +1358,6 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
         this.des_jornada = des_jornada;
     }
 
-
-    /**
-     * Gets the des_local_entrega value for this BuscaColaboradorPorId_ttColaboradorRow.
-     * 
-     * @return des_local_entrega
-     */
-    public java.lang.String getDes_local_entrega() {
-        return des_local_entrega;
-    }
-
-
-    /**
-     * Sets the des_local_entrega value for this BuscaColaboradorPorId_ttColaboradorRow.
-     * 
-     * @param des_local_entrega
-     */
-    public void setDes_local_entrega(java.lang.String des_local_entrega) {
-        this.des_local_entrega = des_local_entrega;
-    }
-
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof BuscaColaboradorPorId_ttColaboradorRow)) return false;
@@ -1561,10 +1537,7 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
               this.cdn_jornada.equals(other.getCdn_jornada()))) &&
             ((this.des_jornada==null && other.getDes_jornada()==null) || 
              (this.des_jornada!=null &&
-              this.des_jornada.equals(other.getDes_jornada()))) &&
-            ((this.des_local_entrega==null && other.getDes_local_entrega()==null) || 
-             (this.des_local_entrega!=null &&
-              this.des_local_entrega.equals(other.getDes_local_entrega())));
+              this.des_jornada.equals(other.getDes_jornada())));
         __equalsCalc = null;
         return _equals;
     }
@@ -1743,9 +1716,6 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
         }
         if (getDes_jornada() != null) {
             _hashCode += getDes_jornada().hashCode();
-        }
-        if (getDes_local_entrega() != null) {
-            _hashCode += getDes_local_entrega().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -2090,12 +2060,6 @@ public class BuscaColaboradorPorId_ttColaboradorRow  implements java.io.Serializ
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("des_jornada");
         elemField.setXmlName(new javax.xml.namespace.QName("", "des_jornada"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setNillable(true);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("des_local_entrega");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "des_local_entrega"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);

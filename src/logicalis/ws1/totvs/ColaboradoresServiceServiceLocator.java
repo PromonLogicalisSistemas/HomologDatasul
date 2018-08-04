@@ -22,7 +22,7 @@ public class ColaboradoresServiceServiceLocator extends org.apache.axis.client.S
     }
 
     // Use to get a proxy class for ColaboradoresServiceObj
-    private java.lang.String ColaboradoresServiceObj_address = "http://br1nidbm994:8080/wsa/wsa1";
+    private java.lang.String ColaboradoresServiceObj_address = "https://br1nidbm002:8080/wsa/wsa1";
 
     public java.lang.String getColaboradoresServiceObjAddress() {
         return ColaboradoresServiceObj_address;

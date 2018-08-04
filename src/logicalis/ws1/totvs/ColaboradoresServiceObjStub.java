@@ -34,7 +34,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -50,7 +50,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -68,7 +68,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -88,7 +88,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -111,11 +111,15 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_falta"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_ausencia"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_ausencia_remun"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_dom_fer"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_adc_noturn"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
+        oper.addParameter(param);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_adc_noturn_reduz"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_ferias"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
@@ -125,17 +129,13 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_saldo_extra"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_extra_ant"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
-        oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "hra_saldo_acum"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
-        oper.addParameter(param);
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "des_indicador"), org.apache.axis.description.ParameterDesc.OUT, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(org.apache.axis.encoding.XMLType.AXIS_VOID);
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -155,7 +155,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -173,7 +173,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -193,7 +193,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -213,7 +213,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         oper.addFault(new org.apache.axis.description.FaultDesc(
-                      new javax.xml.namespace.QName("http://br1nidbm994:8080/wsa/wsa1", "FaultDetail"),
+                      new javax.xml.namespace.QName("https://br1nidbm002:8080/wsa/wsa1", "FaultDetail"),
                       "details.soap_fault.FaultDetail",
                       new javax.xml.namespace.QName("urn:soap-fault:details", "FaultDetail"), 
                       true
@@ -518,19 +518,6 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
             throw (java.rmi.RemoteException)_resp;
         }
         extractAttachments(_call);
-        
-        
-        /*String requestXML = _call.getMessageContext().getRequestMessage().getSOAPPartAsString();
-        String responseXML = _call.getMessageContext().getResponseMessage().getSOAPPartAsString();
-        
-        System.out.println("====================================================");
-        System.out.println("REQUEST");
-        System.out.println(requestXML);
-        System.out.println("====================================================");
-        */
-        
-        _call.setTimeout(1000*60*60);
-        
   } catch (org.apache.axis.AxisFault axisFaultException) {
     if (axisFaultException.detail != null) {
         if (axisFaultException.detail instanceof java.rmi.RemoteException) {
@@ -632,7 +619,7 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
 }
     }
 
-    public void composicaoSaldoHoras(int cdn_funcionario, int num_mes_refer, int num_ano_refer, javax.xml.rpc.holders.StringHolder hra_trabalhavel, javax.xml.rpc.holders.StringHolder hra_trabalhada, javax.xml.rpc.holders.StringHolder hra_afastamento, javax.xml.rpc.holders.StringHolder hra_falta, javax.xml.rpc.holders.StringHolder hra_ausencia_remun, javax.xml.rpc.holders.StringHolder hra_dom_fer, javax.xml.rpc.holders.StringHolder hra_adc_noturn, javax.xml.rpc.holders.StringHolder hra_ferias, javax.xml.rpc.holders.StringHolder hra_saldo_ant, javax.xml.rpc.holders.StringHolder hra_saldo_mes, javax.xml.rpc.holders.StringHolder hra_saldo_extra, javax.xml.rpc.holders.StringHolder hra_extra_ant, javax.xml.rpc.holders.StringHolder hra_saldo_acum, javax.xml.rpc.holders.StringHolder des_indicador) throws java.rmi.RemoteException, details.soap_fault.FaultDetail {
+    public void composicaoSaldoHoras(int cdn_funcionario, int num_mes_refer, int num_ano_refer, javax.xml.rpc.holders.StringHolder hra_trabalhavel, javax.xml.rpc.holders.StringHolder hra_trabalhada, javax.xml.rpc.holders.StringHolder hra_afastamento, javax.xml.rpc.holders.StringHolder hra_falta, javax.xml.rpc.holders.StringHolder hra_ausencia, javax.xml.rpc.holders.StringHolder hra_ausencia_remun, javax.xml.rpc.holders.StringHolder hra_dom_fer, javax.xml.rpc.holders.StringHolder hra_adc_noturn, javax.xml.rpc.holders.StringHolder hra_adc_noturn_reduz, javax.xml.rpc.holders.StringHolder hra_ferias, javax.xml.rpc.holders.StringHolder hra_saldo_ant, javax.xml.rpc.holders.StringHolder hra_saldo_mes, javax.xml.rpc.holders.StringHolder hra_saldo_extra, javax.xml.rpc.holders.StringHolder des_indicador) throws java.rmi.RemoteException, details.soap_fault.FaultDetail {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -678,6 +665,11 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
                 hra_falta.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_falta")), java.lang.String.class);
             }
             try {
+                hra_ausencia.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_ausencia"));
+            } catch (java.lang.Exception _exception) {
+                hra_ausencia.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_ausencia")), java.lang.String.class);
+            }
+            try {
                 hra_ausencia_remun.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_ausencia_remun"));
             } catch (java.lang.Exception _exception) {
                 hra_ausencia_remun.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_ausencia_remun")), java.lang.String.class);
@@ -691,6 +683,11 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
                 hra_adc_noturn.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_adc_noturn"));
             } catch (java.lang.Exception _exception) {
                 hra_adc_noturn.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_adc_noturn")), java.lang.String.class);
+            }
+            try {
+                hra_adc_noturn_reduz.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_adc_noturn_reduz"));
+            } catch (java.lang.Exception _exception) {
+                hra_adc_noturn_reduz.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_adc_noturn_reduz")), java.lang.String.class);
             }
             try {
                 hra_ferias.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_ferias"));
@@ -711,16 +708,6 @@ public class ColaboradoresServiceObjStub extends org.apache.axis.client.Stub imp
                 hra_saldo_extra.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_saldo_extra"));
             } catch (java.lang.Exception _exception) {
                 hra_saldo_extra.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_saldo_extra")), java.lang.String.class);
-            }
-            try {
-                hra_extra_ant.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_extra_ant"));
-            } catch (java.lang.Exception _exception) {
-                hra_extra_ant.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_extra_ant")), java.lang.String.class);
-            }
-            try {
-                hra_saldo_acum.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "hra_saldo_acum"));
-            } catch (java.lang.Exception _exception) {
-                hra_saldo_acum.value = (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_output.get(new javax.xml.namespace.QName("", "hra_saldo_acum")), java.lang.String.class);
             }
             try {
                 des_indicador.value = (java.lang.String) _output.get(new javax.xml.namespace.QName("", "des_indicador"));

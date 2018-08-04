@@ -16,10 +16,6 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
 
     private java.lang.String hra_batida;
 
-    private java.lang.Integer cdn_situacao;
-
-    private java.lang.String des_situacao;
-
     private java.lang.String cod_observ;
 
     private java.lang.String des_observ;
@@ -32,16 +28,12 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
            java.util.Date dat_batida,
            java.lang.String id_batida,
            java.lang.String hra_batida,
-           java.lang.Integer cdn_situacao,
-           java.lang.String des_situacao,
            java.lang.String cod_observ,
            java.lang.String des_observ) {
            this.cdn_funcionario = cdn_funcionario;
            this.dat_batida = dat_batida;
            this.id_batida = id_batida;
            this.hra_batida = hra_batida;
-           this.cdn_situacao = cdn_situacao;
-           this.des_situacao = des_situacao;
            this.cod_observ = cod_observ;
            this.des_observ = des_observ;
     }
@@ -128,46 +120,6 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
 
 
     /**
-     * Gets the cdn_situacao value for this ApontamentoProfissional_ttBatidasFuncRow.
-     * 
-     * @return cdn_situacao
-     */
-    public java.lang.Integer getCdn_situacao() {
-        return cdn_situacao;
-    }
-
-
-    /**
-     * Sets the cdn_situacao value for this ApontamentoProfissional_ttBatidasFuncRow.
-     * 
-     * @param cdn_situacao
-     */
-    public void setCdn_situacao(java.lang.Integer cdn_situacao) {
-        this.cdn_situacao = cdn_situacao;
-    }
-
-
-    /**
-     * Gets the des_situacao value for this ApontamentoProfissional_ttBatidasFuncRow.
-     * 
-     * @return des_situacao
-     */
-    public java.lang.String getDes_situacao() {
-        return des_situacao;
-    }
-
-
-    /**
-     * Sets the des_situacao value for this ApontamentoProfissional_ttBatidasFuncRow.
-     * 
-     * @param des_situacao
-     */
-    public void setDes_situacao(java.lang.String des_situacao) {
-        this.des_situacao = des_situacao;
-    }
-
-
-    /**
      * Gets the cod_observ value for this ApontamentoProfissional_ttBatidasFuncRow.
      * 
      * @return cod_observ
@@ -230,12 +182,6 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
             ((this.hra_batida==null && other.getHra_batida()==null) || 
              (this.hra_batida!=null &&
               this.hra_batida.equals(other.getHra_batida()))) &&
-            ((this.cdn_situacao==null && other.getCdn_situacao()==null) || 
-             (this.cdn_situacao!=null &&
-              this.cdn_situacao.equals(other.getCdn_situacao()))) &&
-            ((this.des_situacao==null && other.getDes_situacao()==null) || 
-             (this.des_situacao!=null &&
-              this.des_situacao.equals(other.getDes_situacao()))) &&
             ((this.cod_observ==null && other.getCod_observ()==null) || 
              (this.cod_observ!=null &&
               this.cod_observ.equals(other.getCod_observ()))) &&
@@ -264,12 +210,6 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
         }
         if (getHra_batida() != null) {
             _hashCode += getHra_batida().hashCode();
-        }
-        if (getCdn_situacao() != null) {
-            _hashCode += getCdn_situacao().hashCode();
-        }
-        if (getDes_situacao() != null) {
-            _hashCode += getDes_situacao().hashCode();
         }
         if (getCod_observ() != null) {
             _hashCode += getCod_observ().hashCode();
@@ -308,18 +248,6 @@ public class ApontamentoProfissional_ttBatidasFuncRow  implements java.io.Serial
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("hra_batida");
         elemField.setXmlName(new javax.xml.namespace.QName("", "hra_batida"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
-        elemField.setNillable(true);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("cdn_situacao");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "cdn_situacao"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
-        elemField.setNillable(true);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("des_situacao");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "des_situacao"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
